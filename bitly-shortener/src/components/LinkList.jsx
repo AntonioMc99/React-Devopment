@@ -1,3 +1,4 @@
+// Shows no links
 import LinkItem from "./LinkItem";
 
 export default function LinkList({ items, onRemove, onClear }) {

@@ -1,3 +1,8 @@
+// This function runs on the server Vercel
+// Reads BITLY
+// Calls API to create a short link
+// Return link  to the client
+
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
@@ -14,6 +19,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({ long_url })
     });
     const data = await r.json();
+        // Forward any Bitly errors with a useful message
     if (!r.ok) {
       const msg = data?.message || data?.description || "Bitly error";
       return res.status(r.status).json({ error: msg });

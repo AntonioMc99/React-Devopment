@@ -1,8 +1,10 @@
+// Renders one item with long URL shortened URL Copy button and Delete button
 import { useState } from "react";
 
 export default function LinkItem({ item, onRemove }) {
   const [copied, setCopied] = useState(false);
 
+  // Copies the short link 
   async function handleCopy() {
     try {
       await navigator.clipboard.writeText(item.link);

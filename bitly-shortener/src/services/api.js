@@ -1,4 +1,4 @@
-// src/services/api.js
+//talks to Bitly
 export async function shorten(long_url) {
   const res = await fetch("/api/shorten", {
     method: "POST",
