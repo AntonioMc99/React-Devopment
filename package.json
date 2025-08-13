@@ -2,7 +2,7 @@
   "name": "url-shortening-api-master",
   "version": "1.0.0",
   "private": true,
-  "description": "React + Vite URL shortener using the Bitly API. Links persist in localStorage; requests go through /api/shorten with BITLY_TOKEN set on Vercel.",
+  "description": "React + Vite URL shortener using the Bitly API. Persists links in localStorage and calls /api/shorten on Vercel with BITLY_TOKEN.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/AntonioMc99/React-Devopment#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -31,4 +32,5 @@
     "vite": "^7.1.2"
   }
 }
+
 
