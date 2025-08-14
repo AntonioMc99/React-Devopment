@@ -1,0 +1,32 @@
+{
+  "name": "url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "I originally just wanted to polish my last project, but I decided to push myself and take on something a bit tougher. This is a simple, clean URL shortener I built with React and Vite that talks to the Bitly API. You can paste any valid link, get a short one back, copy it in one click, and see your history even after a refresh because I keep everything in localStorage. I added friendly validation, clear loading and error messages, and kept the layout responsive with accessible focus and hover states. To keep my Bitly token safe I send requests through a tiny serverless function at api slash shorten and I set the Bitley environment variable on my host. I ran it locally with npm install and npm run dev and deployed with Vercel. It was a fun way to stretch beyond my last build while keeping the code small and easy to read.",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioMc99/React-Devopment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioMc99/React-Devopment/issues"
+  },
+  "homepage": "https://github.com/AntonioMc99/React-Devopment#readme",
+  "type": "module",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.2"
+  }
+}
